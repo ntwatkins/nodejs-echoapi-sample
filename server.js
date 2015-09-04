@@ -77,13 +77,13 @@ app.post('/api/echo', function(req, res){
       {
         // The Intent "TurnOn" was successfully called
         outputSpeechText = "Congrats! You asked to turn on " + jsonData.request.intent.slots.Device.value + " but it was not implemented";
-        cardContent = "Successfully called " + jsonData.request.intent.name + ", but it's not implemented!";
+        cardContent = "Successfully called " + jsonData.request.intent.name + ", but it's not implemented blah!";
       }
       else if (jsonData.request.intent.name == "TurnOff")
       {
         // The Intent "TurnOff" was successfully called
         outputSpeechText = "Congrats! You asked to turn off " + jsonData.request.intent.slots.Device.value + " but it was not implemented";
-        cardContent = "Successfully called " + jsonData.request.intent.name + ", but it's not implemented!";
+        cardContent = "Successfully called " + jsonData.request.intent.name + ", but it's not implemented blah!";
       }else{
         outputSpeechText = jsonData.request.intent.name + " not implemented";
         cardContent = "Successfully called " + jsonData.request.intent.name + ", but it's not implemented!";
